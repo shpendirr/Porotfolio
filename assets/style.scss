@@ -283,6 +283,7 @@ h1{
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .timeline-content p {
   font-size: 16px;
@@ -348,8 +349,10 @@ h1{
     background-color: #00C2A8;
   }
 }
+li > h1{
+  text-transform: uppercase
+}
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 
 

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Play&family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 body {
   background-color: #212121;
 }
@@ -307,6 +306,7 @@ ul li {
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .timeline-content p {
@@ -379,6 +379,10 @@ ul li {
   .timeline ul li:hover::before {
     background-color: #00C2A8;
   }
+}
+
+li > h1 {
+  text-transform: uppercase;
 }
 
 .social-links > p {
