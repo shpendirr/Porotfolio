@@ -37,7 +37,7 @@ button {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    margin: 20px 20px;
+    margin: 20px 5px;
    }
    
    button:hover {
@@ -192,6 +192,12 @@ span{
   line-height: 28px;
   letter-spacing: 1px;
   margin-bottom: 45px;
+}
+.text > h1 {
+  letter-spacing: 3px;
+  &::first-letter{
+    color: #008B74;
+  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -399,6 +405,7 @@ form .half .item input{
   font-size: 17px;
 }
 
+
 form .full{
   margin-bottom: 24px;
 }
@@ -434,7 +441,6 @@ form .action input{
 }
 
 form .action input[type="submit"]{
-  background: white;
   color: #00C2A8;
 }
 
@@ -454,8 +460,9 @@ form .icons a{
   }
 }
 
+
 form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
-  background: rgba(255,255,255,0.075);
+  background: #464646;
 }
 
 @media (max-width: 480px){
@@ -475,17 +482,93 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   }
 }
 
-
-
-
-
-
-
-
-
-
   .social-links > p{
     color: #fff;
     padding: 20px;
   }
   
+  .flex-parent
+  {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+  }
+
+  .flex-parent  .flex-child{
+    width: 540px;
+    height: 140px;
+    border:  1px solid #464646;
+    background-color: #212121;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 5px 70px;
+    color: #464646;
+    &:hover{
+      background-color: #008B74;
+      transition: 2s;
+      letter-spacing: 3px;
+      color: white;
+
+    }
+  }
+
+ 
+.skills-title >h1{
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  &::first-letter{
+    color: #008B74;
+
+  }
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content-p > h3 {
+  color: white;
+}
+.content-p > p{
+  color: white;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

@@ -9,8 +9,7 @@
    
 </head>
 <body>
-
-    
+     
   
          
 
@@ -37,6 +36,13 @@
         <span></span>
         <span></span> Education
       </button></a>
+      <a href="#skills">
+        <button>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span> Skills
+        </button></a>
       <a href="#">
         <button>
           <span></span>
@@ -61,12 +67,12 @@
     
      <section class="about" id="about">
        <div class="content">
-         <img src="/images/logo.png">
+         <img src="/assets/images/logo.png">
          <div class="text">
            <h1>About Me</h1>
            <h5>Frontend Developer</h5>
            <p>I like to create new and creative projects, solve problems, I am also good at communication and teamwork.</p>
-                 <a href="resume.pdf"  data-scroll target="_blank"> <button type="button">Download Resume</button></a> 
+                 <a href="assets/resume.pdf"  data-scroll target="_blank"> <button type="button">Download Resume</button></a> 
           </div>
        </div> 
      </section>
@@ -99,26 +105,83 @@
         </ul>
       </div>
     </div>
-            
-     
+            <div class="skills-title">
+              <h1>Skills</h1>
+            </div>
+    <div class="flex-parent" id="skills">
+      <div class="flex-child" ><p style="margin-top: 60px;">java</p></div>
+      <div class="flex-child" ><p style="margin-top: 60px;">javascript</p></div>
+      <div class="flex-child" ><p style="margin-top: 60px;">vuejs</p></div>
+      <div class="flex-child" ><p style="margin-top: 60px;">html/css</p></div>
+      <div class="flex-child" ><p style="margin-top: 60px;">sass</p></div>
+      <div class="flex-child" ><p style="margin-top: 60px;">bootstrap</p></div>
+      <div class="flex-child" ><p style="margin-top: 60px;">android </p></div>
+      <div class="flex-child" ><p style="margin-top: 60px;">wordpress</p></div>
+       </div>
 
-    <form action="" id="contact">
-      <div class="title">
+
+       <div class="main">
+
+        <h1>Porotfolio</h1>
+        <hr>
+        
+        
+        
+        <div class="row">
+          <div class="column">
+            <div class="content-p">
+              <img src="/assets/images/sc1.jpg" alt="Mountains" style="width:100%">
+              <h3>CINEFLIX </h3>
+              <p>Android application developed for viewing a variety of movies.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content-p">
+              <img src="/assets/images/sc2.jpg" alt="Lights" style="width:100%">
+      
+            </div>
+          </div>
+          <div class="column">
+            <div class="content-p">
+              <img src="/assets/images/sc5.jpg" alt="Nature" style="width:100%">
+              
+            </div>
+          </div>
+          <div class="column">
+            <div class="content-p">
+              <img src="/assets//images/sc7.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+    
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <form action="" id="contact" method="post" autocomplete="off"  > 
+    
+      <div class="title" >
         <h2>CONTACT</h2>
       </div>
       <div class="half">
         <div class="item">
           <label for="name">NAME</label>
-          <input type="text" id = "name">
+          <input type="text" id = "name" required>
         </div>
         <div class="item">
           <label for="email">EMAIL</label>
-          <input type="text" id = "email">
+          <input type="text" id = "email" required >
         </div>
       </div>
       <div class="full">
         <label for="message">MESSAGE</label>
-        <textarea name="" id = "message"></textarea>
+        <textarea name="" id = "message" required></textarea>
       </div>
       <div class="action">
         <input type="submit" value = "SEND MESSAGE">
