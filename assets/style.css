@@ -617,7 +617,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 
 .content-p > p {
   color: white;
-  letter-spacing: 3px;
+  font-size: 9px;
 }
 
 @media screen and (max-width: 900px) {
@@ -628,7 +628,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
