@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Play&family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 body {
   background-color: #212121;
@@ -31,8 +32,8 @@ button {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 20px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
   margin: 20px 5px;
 }
 
@@ -41,97 +42,6 @@ button:hover {
           box-shadow: 0 0 10px #4FFBDF, 0 0 25px #00C2A8, 0 0 50px #008B74;
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
-}
-
-button span {
-  position: absolute;
-}
-
-button span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#4FFBDF));
-  background: linear-gradient(90deg, transparent, #4FFBDF);
-}
-
-button:hover span:nth-child(1) {
-  left: 100%;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
-
-button span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#00C2A8));
-  background: linear-gradient(90deg, transparent, #00C2A8);
-}
-
-button:hover span:nth-child(3) {
-  right: 100%;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  -webkit-transition-delay: 0.35s;
-          transition-delay: 0.35s;
-}
-
-button span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#008B74));
-  background: linear-gradient(180deg, transparent, #008B74);
-}
-
-button:hover span:nth-child(2) {
-  top: 100%;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  -webkit-transition-delay: 0.17s;
-          transition-delay: 0.17s;
-}
-
-button span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#434343));
-  background: linear-gradient(360deg, transparent, #434343);
-}
-
-button:hover span:nth-child(4) {
-  bottom: 100%;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  -webkit-transition-delay: 0.52s;
-          transition-delay: 0.52s;
-}
-
-button:active {
-  background: #434343;
-  background: -webkit-gradient(linear, left bottom, right top, from(#4FFBDF), to(#00C2A8));
-  background: linear-gradient(to top right, #4FFBDF, #00C2A8);
-  color: #bfbfbf;
-  -webkit-box-shadow: 0 0 8px #4FFBDF, 0 0 8px #00C2A8, 0 0 8px #008B74;
-          box-shadow: 0 0 8px #4FFBDF, 0 0 8px #00C2A8, 0 0 8px #008B74;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-button:active span:nth-child(1)
-span:nth-child(2)
-span:nth-child(2)
-span:nth-child(2) {
-  -webkit-transition: none;
-  transition: none;
-  -webkit-transition-delay: none;
-          transition-delay: none;
 }
 
 .container {
@@ -557,7 +467,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 }
 
 .flex-parent .flex-child {
-  width: 540px;
+  width: 340px;
   height: 140px;
   border: 1px solid #464646;
   background-color: #212121;
@@ -565,7 +475,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   text-align: center;
   text-transform: uppercase;
   font-size: 17px;
-  margin: 5px 70px;
+  margin: 10px 70px;
   color: #464646;
 }
 
@@ -586,49 +496,53 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   color: #008B74;
 }
 
-.main {
-  max-width: 1000px;
-  margin: auto;
+.title-education > h1 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
 }
 
-.row {
-  margin: 8px -16px;
+.title-education > h1::first-letter {
+  color: #008B74;
 }
 
-.row,
-.row > .column {
-  padding: 8px;
+hr {
+  width: 100px;
+  margin: 0 auto;
 }
 
-.column {
-  float: left;
-  width: 25%;
+section > h1 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 3px;
+  margin: 10px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+section > h1::first-letter {
+  color: #008B74;
 }
 
-.content-p > h3 {
-  color: white;
+.flex-portfoli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
 }
 
-.content-p > p {
-  color: white;
-  font-size: 9px;
-}
-
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 30%;
-  }
+section > p {
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
